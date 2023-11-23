@@ -59,7 +59,7 @@ class InscriptionController extends Controller
             'attributs'=>'required',
             'statut'=>'required',
            ]); 
-             $chambre= utilisateur::find($request->id);
+             $chambre= Chambre::find($request->id);
              $chambre->nom =$request->nom;
              $chambre->description =$request->description;
              $chambre->nom_ch =$request->nom_ch;
@@ -70,5 +70,16 @@ class InscriptionController extends Controller
 
              return redirect('/Liste')->with('sms', 'modification faite  ' );
     }
+    public function delete_ch($id){
+        $list=Chambre::find($id);
+        return view ("delete", compact('list'));
+    }
+    public function delete_ch_traitement(Request $request, $user){
+            $user = Chambre::find($user);
+            $user->delete();
+             return redirect('/Liste')->with('sms', 'suppresion faite  ' );
+    }
+
+
 
 }

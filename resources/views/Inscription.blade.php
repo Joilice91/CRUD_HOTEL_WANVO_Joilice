@@ -85,9 +85,9 @@
             <button type=submit >Submit</button>
         </div><br><br>
        
-        </div><br><br>
+        </div>
         <div>
-        <a href="/Liste"  class="btn1 btn-danger">Revenir à la liste</a>
+        <a href="/Liste"  class="btn1 btn-danger" >Revenir à la liste</a>
         </div>
         
 
