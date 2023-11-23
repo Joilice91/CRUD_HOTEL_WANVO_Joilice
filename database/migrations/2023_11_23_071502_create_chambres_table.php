@@ -14,12 +14,13 @@ return new class extends Migration
         Schema::create('chambres', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
+            $table->string('description');
             $table->string('nom_ch');
             $table->string('prix');
             $table->string('lits');
             $table->string('adultes');
             $table->string('enfants');
-            $table->string('attribut');
+            $table->string('attributs');
             $table->string('statut');
             $table->timestamps();
         });

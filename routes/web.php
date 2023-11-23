@@ -20,3 +20,6 @@ Route::get('/', function () {
 });
 Route::get('Inscription', [InscriptionController::class, 'form_ch']);
 Route::post('Inscription/traitement', [InscriptionController::class, 'form_ch_traitement']);
+Route::get('Liste', [InscriptionController::class, 'list_ch']);
+Route::get('/update-ch/{id}', [InscriptionController::class, 'update_ch']);
+Route::post('update/traitement', [InscriptionController::class, 'update_ch_traitement']);

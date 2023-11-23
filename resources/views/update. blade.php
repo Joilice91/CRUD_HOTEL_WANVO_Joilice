@@ -4,8 +4,8 @@
         <meta charset="utf-8">
 
 
-        <title>Formulaire</title>
-        <link rel="stylesheet" href="css\formulaire.css">
+        <title>Modifier</title>
+        <link rel="stylesheet" href="">
 
         
        
@@ -14,7 +14,7 @@
         
     </head>
     <body > 
-        <h1>Hotel le Sage</h1>
+        <h1>Modifier une chambre</h1>
 
         @if(session('sms'))
           <div    class="alert alert-success"> 
@@ -29,41 +29,34 @@
         </ul>
 
        
-        <form method="POST" action="/Inscription/traitement">
+        <form method="POST" action="/update/traitement">
             @csrf
+            <var>
+            
+            <input type="text"  name="id" style="display: none;" value="{{$list->id}}">
+
+           
          <div>
-        <label for="nom"> Nom de l'hôtel *</label><br>
-         <input type="text" name="nom"><br><br>
+        <label for="nom">Nom</label><br>
+         <input type="text" name="nom" id="nom" value="{{$list->nom}}" ><br><br>
         </div>
         <div>
-        <label for="Description"> Description de l'hôtel</label><br>
-         <input type="text" name="description"><br><br>
+        <label for="description"> Description</label><br>
+         <input type="text" name="description"  id="description" value="{{$list->description}}"><br><br>
         </div>
         <div>
-        <label for="nom_ch"> Nom de la chambre *</label><br>
-         <input type="number" name="nom_ch"><br><br>
+        <label for="nom_ch">Nom de la chambre</label><br>
+         <input type="text" name="nom_ch"  id="nom_ch" value="{{$list->nom_ch}}"><br><br>
         </div>
+
         <div>
-        <label for="prix"> Prix *</label><br>
-         <input type="text" name="prix"><br><br>
+        <label for="prix">Prix</label><br>
+         <input type="number" name="prix"  id="prix" value="{{$list->prix}}"><br><br>
         </div>
-        <div>
-        <label for="lits">Nombre de lits *</label><br>
-         <input type="number" name="lits"><br><br>
-        </div>
-       
-        <div>
-        <label for="adulte">Max d’adultes</label><br>
-         <input type="number" name="adultes"><br><br>
-        </div>
-        <div>
-        <label for="enfants">Enfants maximum autorisé</label><br>
-         <input type="number" name="enfants"><br><br>
-        </div>
-        
+      
         <div>
         <label for="attributs">Attribut</label><br>
-        <select name="attributs" id="attributs">
+        <select name="attributs" id="attributs"  value="{{$list->attribut}}">
           <option value=""></option>
           <option value="dejener"> Petit déjeuner</option>
           <option value="nettoyage"> Service de nettoyage</option>
@@ -73,22 +66,19 @@
         </div><br>
         <div>
         <label for="statut">Statut *</label><br>
-        <select name="statut" id="statut">
+        <select name="statut" id="statut" value="{{$list->statut}}">
           <option value=""></option>
           <option value="disponible">Disponible</option>
           <option value="non disponible">Non disponible</option>
         </select>
         </div>
-        
-        
         <div> 
-            <button type=submit >Submit</button>
-        </div><br><br>
-       
+            <button type=submit >Modifier</button>
         </div><br><br>
         <div>
         <a href="/Liste"  class="btn1 btn-danger">Revenir à la liste</a>
         </div>
+
         
 
         </form>

@@ -17,7 +17,7 @@ class Chambre extends Model
         'lits',
         'adultes',
         'enfants',
-        'attribut',
+        'attributs',
         'statut',
         
 
