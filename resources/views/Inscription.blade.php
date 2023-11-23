@@ -62,16 +62,6 @@
         </div>
         
         <div>
-        <label for="attribut">Attribut</label><br>
-        <select name="attribut" id="">
-          <option value=""></option>
-          <option value="dejener"> Petit déjeuner</option>
-          <option value="nettoyage"> Service de nettoyage</option>
-          <option value="Tv">Télévision</option>
-          <option value="réveil">Service de réveil</option>
-        </select>
-        </div><br>
-        <div>
         <label for="statut">Statut *</label><br>
         <select name="statut" id="">
           <option value=""></option>

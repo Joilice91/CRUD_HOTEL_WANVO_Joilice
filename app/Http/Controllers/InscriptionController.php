@@ -23,7 +23,6 @@ class InscriptionController extends Controller
         'lits'=>'required',
         'adultes'=>'required',
         'enfants'=>'required',
-        'attributs'=>'required',
         'statut'=>'required',
        ]);
        $chambre=new Chambre();
@@ -34,7 +33,6 @@ class InscriptionController extends Controller
        $chambre->lits =$request->lits;
        $chambre->adultes =$request->adultes;
        $chambre->enfants =$request->enfants;
-       $chambre->attributs =$request->attributs;
        $chambre->statuts =$request->statuts;
        $chambre->save();
 
