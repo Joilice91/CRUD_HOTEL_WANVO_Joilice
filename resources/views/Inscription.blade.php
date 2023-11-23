@@ -15,7 +15,7 @@
     </head>
     <body > 
         <h1>Hotel le Sage</h1>
-        
+
         @if(session('sms'))
           <div    class="alert alert-success"> 
           {{session('sms')}}
@@ -32,7 +32,7 @@
         <form method="POST" action="">
             @csrf
          <div>
-        <label for="nom"> Nom de l'hôtel</label><br>
+        <label for="nom"> Nom de l'hôtel *</label><br>
          <input type="text" name="nom"><br><br>
         </div>
         <div>
@@ -44,11 +44,11 @@
          <input type="text" name="nom_ch"><br><br>
         </div>
         <div>
-        <label for="prix"> Prix</label><br>
+        <label for="prix"> Prix *</label><br>
          <input type="text" name="prix"><br><br>
         </div>
         <div>
-        <label for="lits">Nombre de lits</label><br>
+        <label for="lits">Nombre de lits *</label><br>
          <input type="nombre" name="lits"><br><br>
         </div>
        
@@ -72,7 +72,7 @@
         </select>
         </div><br>
         <div>
-        <label for="statut">Statut</label><br>
+        <label for="statut">Statut *</label><br>
         <select name="statut" id="">
           <option value=""></option>
           <option value="disponible">Disponible</option>
