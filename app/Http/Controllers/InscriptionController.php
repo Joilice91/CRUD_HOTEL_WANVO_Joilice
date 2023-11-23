@@ -28,14 +28,14 @@ class InscriptionController extends Controller
        ]);
        $chambre=new Chambre();
        $chambre->nom =$request->nom;
-       $chambre->description =$request->prenom;
-       $chambre->nom_ch =$request->ville;
-       $chambre->prix =$request->ville;
-       $chambre->lits =$request->role;
-       $chambre->adultes =$request->role;
-       $chambre->enfants =$request->role;
-       $chambre->attributs =$request->role;
-       $chambre->statuts =$request->role;
+       $chambre->description =$request->description;
+       $chambre->nom_ch =$request->nom_ch;
+       $chambre->prix =$request->prix;
+       $chambre->lits =$request->lits;
+       $chambre->adultes =$request->adultes;
+       $chambre->enfants =$request->enfants;
+       $chambre->attributs =$request->attributs;
+       $chambre->statuts =$request->statuts;
        $chambre->save();
 
        return redirect('Inscription')->with('sms', 'Tu es maintenant ajouter ' );
