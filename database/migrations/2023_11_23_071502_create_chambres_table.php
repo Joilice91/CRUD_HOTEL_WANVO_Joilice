@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('lits');
             $table->string('adultes');
             $table->string('enfants');
+            $table->string('attribut');
             $table->string('statut');
             $table->timestamps();
         });
