@@ -66,7 +66,7 @@ class InscriptionController extends Controller
              $chambre->prix =$request->prix;
              $chambre->attributs =$request->attributs;
              $chambre->statut =$request->statut;
-             $utilisateur->update();
+             $chambre->update();
 
              return redirect('/Liste')->with('sms', 'modification faite  ' );
     }
