@@ -49,21 +49,21 @@
         </div>
         <div>
         <label for="lits">Nombre de lits *</label><br>
-         <input type="nombre" name="lits"><br><br>
+         <input type="number" name="lits"><br><br>
         </div>
        
         <div>
         <label for="adulte">Max d’adultes</label><br>
-         <input type="nombre" name="adultes"><br><br>
+         <input type="number" name="adultes"><br><br>
         </div>
         <div>
         <label for="enfants">Enfants maximum autorisé</label><br>
-         <input type="nombre" name="enfants"><br><br>
+         <input type="number" name="enfants"><br><br>
         </div>
         
         <div>
         <label for="attribut">Attribut</label><br>
-        <select name="attribut" id="">
+        <select name="attribut" id="attribut">
           <option value=""></option>
           <option value="dejener"> Petit déjeuner</option>
           <option value="nettoyage"> Service de nettoyage</option>
@@ -73,7 +73,7 @@
         </div><br>
         <div>
         <label for="statut">Statut *</label><br>
-        <select name="statut" id="">
+        <select name="statut" id="statut">
           <option value=""></option>
           <option value="disponible">Disponible</option>
           <option value="non disponible">Non disponible</option>
