@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->string('nom_ch');
+            $table->string('prix');
             $table->string('lits');
             $table->string('adultes');
             $table->string('enfants');

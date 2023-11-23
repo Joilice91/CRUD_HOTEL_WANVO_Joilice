@@ -29,7 +29,7 @@
         </ul>
 
        
-        <form method="POST" action="">
+        <form method="POST" action="/Inscription/traitement">
             @csrf
          <div>
         <label for="nom"> Nom de l'hôtel *</label><br>

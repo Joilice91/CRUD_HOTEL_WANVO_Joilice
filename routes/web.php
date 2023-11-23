@@ -19,3 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('Inscription', [InscriptionController::class, 'form_ch']);
+Route::post('Inscription/traitement', [InscriptionController::class, 'form_ch_traitement']);
